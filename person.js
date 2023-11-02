@@ -1,6 +1,7 @@
 
 class Person {
     
+    
     constructor(name, surname, yearOfBirth, genero, peso, altura, hobbies){
 
         this.name = name;
@@ -50,14 +51,11 @@ class Person {
 
     }
 
-    
-
 }
 
-
-
-
 module.exports = Person;
+
+
 
 
 
