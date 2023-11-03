@@ -40,15 +40,10 @@ class Person {
 
     printHobbies(){
 
-        let hobbie1 = [];
         for (let hobbie of this.hobbies) {
-            hobbie1.push(hobbie)
-
+            console.log(hobbie);
         }
-
-        // console.log(`Los hobbies de ${this.name} son ${hobbie1}`);
-        return hobbie1;
-
+        
     }
 
 }

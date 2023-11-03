@@ -8,10 +8,15 @@ let hobbiesPerson2 = ["Ajedrez", "Poker", "Running"];
 let person2 = new lib("Paco", "Gomez", "1982", "Masculino", "80", "1.75", hobbiesPerson2);
 
 
-console.log(person.calculoImc());
-console.log(person.edad());
-console.log(person.printAll());
-console.log(person.printHobbies());
+// console.log(person.calculoImc());
+// console.log(person.edad());
+// console.log(person.printAll());
+// person.printHobbies()
+
+// hobbiesPerson1.push("futbol")
+person.hobbies.push("futbol")
+
+console.log(person.hobbies);
 
 
 
