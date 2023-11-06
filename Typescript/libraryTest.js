@@ -1,0 +1,12 @@
+"use strict";
+Object.defineProperty(exports, "__esModule", { value: true });
+var books_1 = require("./books");
+var library_1 = require("./library");
+var book1 = new books_1.Book("Los pilares de la tierra", 600, "253420", "Ken Follet", "Random House");
+var book2 = new books_1.Book("Harry Potter", 390, "253245", "JK Rowlin", "Scholastic");
+var book3 = new books_1.Book("Tolkien", 800, "345678", "JRR Tolkien", "Editorial Minotauro");
+var lib1 = new library_1.Library([book1, book2, book3], "Juan Urtado", "Jesus");
+var library1 = lib1.toStringLibrary();
+console.log(library1);
+var author = lib1.findByauthor("Ken Follet");
+console.log(author);
