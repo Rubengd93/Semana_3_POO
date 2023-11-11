@@ -41,9 +41,8 @@ var Book = /** @class */ (function () {
     };
     Book.prototype.toString = function () {
         var property = "";
-        for (var i = 0; i < Book.length; i++) {
-            property = "Title - ".concat(this.title, " \n           Number of Pages - ").concat(this.nPages, "\n           ISBN - ").concat(this.isbn, "\n           Author - ").concat(this.author, "\n           Editorial - ").concat(this.editorial);
-        }
+        property =
+            "Title - ".concat(this.title, " \n        Number of Pages - ").concat(this.nPages, "\n        ISBN - ").concat(this.isbn, "\n        Author - ").concat(this.author, "\n        Editorial - ").concat(this.editorial);
         return property;
     };
     return Book;

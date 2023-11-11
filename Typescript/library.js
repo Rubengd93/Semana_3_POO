@@ -8,9 +8,9 @@ var Library = /** @class */ (function () {
         this.manager = manager;
         // this.books.push(book1,book2,book3);
     }
-    Library.prototype.getBook = function () {
-        return this.books;
-    };
+    // public getBook():Book[]{
+    //     return this.books;
+    // }
     Library.prototype.getAdress = function () {
         return this.adress;
     };
@@ -18,14 +18,17 @@ var Library = /** @class */ (function () {
         return this.manager;
     };
     Library.prototype.setAdress = function (adress) {
-        return this.adress = adress;
+        this.adress = adress;
     };
     Library.prototype.setManager = function (manager) {
-        return this.manager = manager;
+        this.manager = manager;
     };
     Library.prototype.toStringLibrary = function () {
-        for (var i = 0; i < this.books.length; i++)
-            console.log(this.books[i]);
+        var result = "";
+        for (var i = 0; i < this.books.length; i++) {
+            result += "\n".concat(this.books[i].toString());
+        }
+        return result;
     };
     Library.prototype.getNumberBooks = function () {
         return this.books.length;

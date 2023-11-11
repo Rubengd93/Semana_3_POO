@@ -15,9 +15,9 @@ export class Library {
 
     }
 
-    public getBook():Book[]{
-        return this.books;
-    }
+    // public getBook():Book[]{
+    //     return this.books;
+    // }
 
     public getAdress():string{
         return this.adress;
@@ -27,21 +27,24 @@ export class Library {
         return this.manager;
     }
 
-    public setAdress(adress:string):string{
-        return this.adress = adress;
+    public setAdress(adress:string){
+        this.adress = adress;
     }
 
-    public setManager(manager:string):string{
-        return this.manager = manager;
+    public setManager(manager:string){
+        this.manager = manager;
     }
 
-    public toStringLibrary(){
+    public toStringLibrary():string{
 
-        for (let i = 0; i < this.books.length; i++) 
+        let result = "";
+        for (let i = 0; i < this.books.length; i++){
 
-            console.log(this.books[i]);            
-             
-        }
+            result += `\n${this.books[i].toString()}`;
+            
+        } 
+        return result;
+    }
 
     public getNumberBooks():number{
         return this.books.length
@@ -49,12 +52,12 @@ export class Library {
 
     public findByauthor(author:string):Book[]{
 
-        const authorLib = this.books.filter((book) => book.getauthor() == author);
+        const authorLib = this.books.filter(book => book.getauthor() == author);
         return authorLib;
 
     }
 
-    }
+}
 
 
 

@@ -1,5 +1,5 @@
-import { Contacts } from "./contact";
-import { Person } from "./person";
+import { Contacts } from "./contact.js";
+import { Person } from "./person.js";
 
 let person = new Person("Ruben", 30, "Periodista ricardo martinez perez, 21");
 let person1 = new Person("Juan", 60, "Calle la palmita, portal 5, 5C");

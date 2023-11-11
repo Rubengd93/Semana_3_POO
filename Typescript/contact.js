@@ -1,13 +1,10 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-exports.Contacts = void 0;
-var Contacts = /** @class */ (function () {
-    function Contacts() {
+export class Contacts {
+    constructor() {
         this.people = [];
     }
-    Contacts.prototype.printCalendar = function () {
-        console.log(this.people);
-    };
-    return Contacts;
-}());
-exports.Contacts = Contacts;
+    printCalendar() {
+        for (let i = 0; i < this.people.length; i++) {
+            console.log(this.people[i]);
+        }
+    }
+}

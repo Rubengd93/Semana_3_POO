@@ -57,20 +57,17 @@ export class Book{
     public toString():string {
 
         let property = "";
-        for (let i = 0; i < Book.length; i++) {
             
-           property = `Title - ${this.title} 
-           Number of Pages - ${this.nPages}
-           ISBN - ${this.isbn}
-           Author - ${this.author}
-           Editorial - ${this.editorial}`;
+        property = 
+        `Title - ${this.title} 
+        Number of Pages - ${this.nPages}
+        ISBN - ${this.isbn}
+        Author - ${this.author}
+        Editorial - ${this.editorial}`;
             
-            
-        }
-
         return property;
         
-}
+    }
 
 }
 

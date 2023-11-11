@@ -1,10 +1,8 @@
-"use strict";
-Object.defineProperty(exports, "__esModule", { value: true });
-var contact_1 = require("./contact");
-var person_1 = require("./person");
-var person = new person_1.Person("Ruben", 30, "Periodista ricardo martinez perez, 21");
-var person1 = new person_1.Person("Juan", 60, "Calle la palmita, portal 5, 5C");
-var person2 = new person_1.Person("Alberto", 35, "Calle recogidas, Granada");
-var contactos = new contact_1.Contacts();
+import { Contacts } from "./contact.js";
+import { Person } from "./person.js";
+let person = new Person("Ruben", 30, "Periodista ricardo martinez perez, 21");
+let person1 = new Person("Juan", 60, "Calle la palmita, portal 5, 5C");
+let person2 = new Person("Alberto", 35, "Calle recogidas, Granada");
+let contactos = new Contacts();
 contactos.people.push(person, person1, person2);
 contactos.printCalendar();

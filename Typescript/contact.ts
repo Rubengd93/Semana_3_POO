@@ -1,15 +1,21 @@
-import { Person } from "./person";
+import { Person } from "./person.js";
 
 export class Contacts {
 
-    public people: Person[]
+    public people: Person[];
 
     constructor() {
-        this.people = []
+        this.people = [];
     }
 
     public printCalendar() {
-        console.log(this.people);
+
+        for (let i = 0; i < this.people.length; i++) {
+            
+            console.log(this.people[i]);
+            
+            
+        }
 
     }
 
